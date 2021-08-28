@@ -1,0 +1,58 @@
+while(choice!="Kipling" and choice!="Albion" and choice!="Finch"):
+    print("Type your location again")
+    choice=(input("Please enter your location:\nKipling\nFinch\nAlbion"))
+
+while(choice=="Kipling" or choice=="Albion" or choice=="Finch"):
+    if(choice=="Kipling"):
+        print("Resteraunts near you:\n", kipling_r)
+        choice_2=(input("Which resteraunt do you want to know about\n"))
+        for i in range(len(kipling_r)):
+            while(choice_2==kipling_r[i]):
+                if(choice_2==kipling_r[0]):
+                    print("""Mandarin Restaurant Franchise Corporation is a chain of all-you-can-eat
+                                 Chinese-Canadian buffet restaurants.
+                                 Rating:4.3/5
+                                 Transport: Car, Bike, Bus""")
+                    break
+                elif(choice_2==kipling_r[1]):
+                    print("""Dairy Queen is an American chain of soft serve ice cream and fast-food restaurants owned by International Dairy Queen, Inc., a subsidiary
+                                 of Berkshire Hathaway. 
+                                 Rating:4.7/5
+                                 Transport: Car, Walk, Train, Bike, Bus""")
+                    break
+        break
+
+    elif(choice=="Finch"):
+        print("Resteraunts near you:\n", finch_r)
+        choice_3=(input("Which resteraunt do you want to know about\n"))
+        for i in range(len(finch_r)):
+            while(choice_3==finch_r[i]):
+                if(choice_3==finch_r[0]):
+                    print(""" McDonald's is an American fast food company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino,
+                                  California, United States.
+                                   Rating:4.8/5
+                                  Transport: Car, Bike, Bus, Walk""")
+                    break
+                elif(choice_3==finch_r[1]):
+                    print("""Pizza Pizza Ltd. is a franchised Canadian pizza quick-service restaurant with its headquarters in Toronto, Ontario. 
+                             Rating:4.7/5
+                             Transport: Car, Walk, Bike, Bus""")
+                    break
+        break
+
+    elif(choice=="Albion"):
+        print("Resteraunts near you:\n", albion_r)
+        choice_4=(input("Which resteraunt do you want to know about\n"))
+        for i in range(len(albion_r)):
+            while(choice_4==albion_r[i]):
+                if(choice_4==albion_r[0]):
+                    print(""" Subway is an American fast food restaurant franchise that primarily sells submarine sandwiches, salads and beverages.
+                                   Rating:4.6/5
+                                  Transport: Car, Bike, Bus, Walk""")
+                    break
+                elif(choice_4==albion_r[1]):
+                    print("""Burger King is an American multinational chain of hamburger fast food restaurants
+                                 Rating:4.2/5
+                                 Transport: Car, Walk, Bike, Bus""")
+                    break
+        break
